@@ -320,18 +320,23 @@ footer:not(:first-child) {
   border-radius: 10px;
   overflow: hidden;
 }
+.product-card .product-image {
+  height: 270px;
+}
+
+.product-card .product-image >img{
+  object-fit: contain;
+}
 
 .product-card:hover .product-image > img:first-child{
  display: none;
 }
 .product-card:hover .product-image > img:last-child{
   display: block;
+  cursor: pointer;
  }
-.product-card .product-image > img:last-child{
+.product-card .product-image > img:last-child{ 
   display: none;
-}
-.product-card .product-image > img:first-child{
-  display: block;
 }
 
 .product-content .product-name{

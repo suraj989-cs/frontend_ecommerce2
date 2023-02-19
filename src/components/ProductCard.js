@@ -16,7 +16,7 @@ const ratingChanged = (newRating) => {
 const ProductCard = () => {
   return (
     <div className="col-3">
-      <div className="product-card position-relative shadow">
+      <Link className="product-card position-relative shadow" to="">
         <div className="product-image">
           <img src={product01} alt="product" className="img-fluid" />
           <img src={product02} alt="product" className="img-fluid" />
@@ -60,7 +60,7 @@ const ProductCard = () => {
             </Link>
           </div>
         </div>
-      </div>
+      </Link>
     </div>
   );
 };
