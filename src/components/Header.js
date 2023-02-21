@@ -118,7 +118,7 @@ const Header = () => {
             <div className="col-12">
               <div className="menu-bottom d-flex align-content-center">
                 <div className="d-flex pe-1">
-                  <div class="dropdown">
+                  <div className="dropdown">
                     <button
                       className="btn btn-secondary dropdown-toggle"
                       type="button"
@@ -157,7 +157,7 @@ const Header = () => {
                 <div className="menu-links">
                   <div className="d-flex align-content-center gap-15">
                     <NavLink to="/">Home</NavLink>
-                    <NavLink to="/">Our Store</NavLink>
+                    <NavLink to="/store">Our Store</NavLink>
                     <NavLink to="/">Blogs</NavLink>
                     <NavLink to="/">Contact</NavLink>
                   </div>

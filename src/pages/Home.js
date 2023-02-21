@@ -12,9 +12,15 @@ import service02 from "../images/service-02.png";
 import service03 from "../images/service-03.png";
 import service04 from "../images/service-04.png";
 import service05 from "../images/service-05.png";
+
 import camera from "../images/camera.jpg";
 import tv from "../images/tv.jpg";
 import headphone from "../images/headphone.jpg";
+import iHeadphone from "../images/Iheadphone.png";
+import ipad from "../images/tab.jpg";
+import homepod from "../images/homepod.png";
+import boatwatch from "../images/boatwatch.png"
+
 import laptop from "../images/laptop.jpg";
 import brand01 from "../images/brand-01.png";
 import brand02 from "../images/brand-02.png";
@@ -26,6 +32,7 @@ import brand07 from "../images/brand-07.png";
 
 import BlogCard from "../components/BlogCard";
 import ProductCard from "../components/ProductCard";
+import SpecialProduct from "../components/SpecialProduct";
 
 const Home = () => {
   return (
@@ -168,7 +175,7 @@ const Home = () => {
 
       <section className="home-wrapper-2 py-5">
         <div className="container-xxl">
-        <div className="row">
+          <div className="row">
             <div className="col-12">
               <h3 className="section-heading">Our Top categories</h3>
             </div>
@@ -242,15 +249,109 @@ const Home = () => {
       <section className="featured-wrapper py-5 home-wrapper-2">
         <div className="container-xxl">
           <div className="row">
-            <div className="col-12">
+            <div className="col-12 ">
               <h3 className="section-heading">Featured Collections</h3>
             </div>
           </div>
           <div className="row">
-            <ProductCard/> 
-            <ProductCard/> 
-            <ProductCard/> 
-            <ProductCard/> 
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+          </div>
+        </div>
+      </section>
+
+      <section className="unique-wrapper home-wrapper-2 py-5">
+        <div className="container-xxl">
+          <div className="row">
+
+            <div className="col-3">
+              <div className="unique-product-card text-white shadow-lg" style={{background: "#212529"}}>
+                <h5 className="product-usp text-white">Big screen</h5>
+                <h6 className="product-subtitle text-white">Flash Smart Watch</h6>
+                <p className="product-desc">
+                  From $990.00 or $41.62/mo. <br /> for 24 mo.
+                </p>
+                <div className="unique-image">
+                  <img src={boatwatch} alt="product" className="img-fluid"/>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-3">
+              <div className="unique-product-card shadow-lg" style={{background: "white"}}>
+                <h5 className="product-usp">Big view</h5>
+                <h6 className="product-subtitle ">Apple iPad Series 2</h6>
+                <p className="product-desc">
+                  From $990.00 or $41.62/mo. <br /> for 24 mo.
+                </p>
+                <div className="unique-image">
+                  <img src={ipad} alt="product" className="img-fluid"/>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-3">
+              <div className="unique-product-card shadow-lg" style={{background: "white"}}>
+                <h5 className="product-usp">crystal sound</h5>
+                <h6 className="product-subtitle">Apple Smart sound</h6>
+                <p className="product-desc">
+                  From $990.00 or $41.62/mo. <br /> for 24 mo.
+                </p>
+                <div className="unique-image">
+                  <img src={iHeadphone} alt="product" className="img-fluid"/>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-3">
+              <div className="unique-product-card shadow-lg" style={{background: "#212529"}}>
+                <h5 className="product-usp text-white">Power Sound</h5>
+                <h6 className="product-subtitle text-white">Power Pod 2</h6>
+                <p className="product-desc text-white">
+                  From $990.00 or $41.62/mo. <br /> for 24 mo.
+                </p>
+                <div className="unique-image">
+                  <img src={homepod} alt="product" className="img-fluid" />
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section className="special-wrapper home-wrapper-2 py-5">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <h3 className="section-heading">Special Collection</h3>
+            </div>
+          </div>
+          <div className="row">
+            <SpecialProduct />
+            <SpecialProduct />
+            <SpecialProduct />
+            <SpecialProduct />
+            <SpecialProduct />
+            <SpecialProduct />
+          </div>
+        </div>
+      </section>
+
+      <section className="popular-wrapper py-5 home-wrapper-2">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <h3 className="section-heading">Our Popular Products</h3>
+            </div>
+          </div>
+          <div className="row">
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
           </div>
         </div>
       </section>
@@ -297,10 +398,10 @@ const Home = () => {
             </div>
           </div>
           <div className="row">
-            <BlogCard/>
-            <BlogCard/>
-            <BlogCard/>
-            <BlogCard/>
+            <BlogCard />
+            <BlogCard />
+            <BlogCard />
+            <BlogCard />
           </div>
         </div>
       </section>
