@@ -16,9 +16,7 @@ const ratingChanged = (newRating) => {
 };
 
 const OurStore = () => {
-    const [grid, setGrid] = useState(4);
-    // alert(grid);
-
+    const [grid, setGrid] = useState(3);
     return (
         <>
             <Meta title={"Our store"} />
@@ -189,10 +187,10 @@ const OurStore = () => {
                                     <div className="d-flex align-items-center gap-10">
                                         <p className="mb-0 text-dark">12 Products</p>
                                         <div className="grid-layout d-flex gap-10">
-                                            <img src={grid01} onClick={() => { setGrid(1) }} alt="grid" className="img-fluid d-block" width={20} height={20} />
-                                            <img src={grid02} onClick={() => { setGrid(2) }} alt="grid" className="img-fluid d-block" width={20} height={20} />
-                                            <img src={grid03} onClick={() => { setGrid(3) }} alt="grid" className="img-fluid d-block" width={20} height={20} />
-                                            <img src={grid04} onClick={() => { setGrid(4) }} alt="grid" className="img-fluid d-block" width={20} height={20} />
+                                            <img src={grid04} onClick={() => { setGrid(3) }} alt="grid" className="img-fluid d-block" width={20} height={20} />
+                                            <img src={grid03} onClick={() => { setGrid(4) }} alt="grid" className="img-fluid d-block" width={20} height={20} />
+                                            <img src={grid02} onClick={() => { setGrid(6) }} alt="grid" className="img-fluid d-block" width={20} height={20} />
+                                            <img src={grid01} onClick={() => { setGrid(12) }} alt="grid" className="img-fluid d-block" width={20} height={20} />
                                         </div>
                                     </div>
                                 </div>
@@ -200,18 +198,21 @@ const OurStore = () => {
 
                             <div className="products-list my-4 ">
                                 <div className="row">
-                                    <ProductCard />
-                                    <ProductCard />
-                                    <ProductCard />
-                                    <ProductCard />
-                                    <ProductCard />
-                                    <ProductCard />
-                                    <ProductCard />
-                                    <ProductCard />
-                                    <ProductCard />
-                                    <ProductCard />
-                                    <ProductCard />
-                                    <ProductCard />
+                                    <div className="d-flex gap-10 flex-wrap">    
+                                    <ProductCard grid={grid}/>
+                                    <ProductCard grid={grid}/>
+                                    <ProductCard grid={grid}/>
+                                    <ProductCard grid={grid}/>
+                                    <ProductCard grid={grid}/>
+                                    <ProductCard grid={grid}/>
+                                    <ProductCard grid={grid}/>
+                                    <ProductCard grid={grid}/>
+                                    <ProductCard grid={grid}/>
+                                    <ProductCard grid={grid}/>
+                                    <ProductCard grid={grid}/>
+                                    <ProductCard grid={grid}/>
+                                    </div>
+                                    
                                 </div>
 
                             </div>
